@@ -5,7 +5,7 @@ import readline from "readline/promises";
 import { adicionarItem, excluirItem, listarItens, pesoMedio, somarPesos, somarValores, totalEstoque, totalProdutos, valorMedio } from "./controllers/controleEstoque";
 
 function menu () {
-    console.log("Escolha uma opção:");
+    console.log("Digite a opção desejada ou 0 para retornar para a etapa anterior");
     console.log("1. Adicionar Item ao Inventário");
     console.log("2. Remover Item do Inventário");
     console.log("3. Listar Itens do Inventário");
@@ -15,7 +15,7 @@ function menu () {
     console.log("7. Calcular Média de Peso dos Itens");
     console.log("8. Ver Quantidade Total de Itens no Inventário");
     console.log("9. Ver Quantidade Total de Produtos no Inventário");
-    console.log("0. Sair");
+    console.log("0. Retornar");
 }
 
 function main () {
